@@ -1,0 +1,39 @@
+{
+  "name": "weather-cache-api",
+  "version": "1.0.0",
+  "description": "A weather API service with caching and retry mechanisms",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "weather",
+    "api",
+    "cache",
+    "express",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "jest": "^30.1.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^6.3.3",
+    "axios-mock-adapter": "^1.22.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
